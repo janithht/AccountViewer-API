@@ -30,7 +30,7 @@ jobs:
         run: dotnet test AccountViewer.Tests/AccountViewer.Tests.csproj --configuration Release --no-build
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish AccountViewer-Backend/AccountViewer.csproj -c Release -o ./publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
