@@ -693,3 +693,4 @@ D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\AccountsViewer
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\AccountsViewer.genruntimeconfig.cache
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\ref\AccountsViewer.dll
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\AccountsViewer.sourcelink.json

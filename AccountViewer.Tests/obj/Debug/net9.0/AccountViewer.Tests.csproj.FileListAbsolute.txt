@@ -427,3 +427,4 @@ D:\Projects\AccountsViewer\AccountViewer-BackEnd\AccountViewer.Tests\bin\Debug\n
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\AccountViewer.Tests\bin\Debug\net9.0\AccountViewer.Tests\bin\Debug\net9.0\AccountViewer.Tests\obj\Debug\net9.0\AccountViewer.Tests.sourcelink.json
 D:\Projects\AccountsViewer\AccountViewer.Tests\bin\Debug\net9.0\AccountViewer.Tests\obj\AccountViewer.Tests.csproj.nuget.dgspec.json
 D:\Projects\AccountsViewer\AccountViewer.Tests\bin\Debug\net9.0\AccountViewer.Tests\obj\project.assets.json
+D:\Projects\AccountsViewer\AccountViewer.Tests\obj\Debug\net9.0\AccountViewer.Tests.sourcelink.json
