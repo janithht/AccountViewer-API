@@ -412,8 +412,6 @@ D:\Projects\AccountsViewer\Backend\bin\Debug\net9.0\BCrypt.Net-Next.dll
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\testhost.dll
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\testhost.exe
-D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\AccountViewer.Tests\obj\AccountViewer.Tests.csproj.nuget.dgspec.json
-D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\AccountViewer.Tests\obj\project.assets.json
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\appsettings.Development.json
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\appsettings.json
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\bin\Debug\net9.0\AccountsViewer.staticwebassets.endpoints.json
@@ -694,3 +692,7 @@ D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\AccountsViewer
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\ref\AccountsViewer.dll
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\AccountsViewer.sourcelink.json
+D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\Projects\AccountsViewer\AccountViewer-BackEnd\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
