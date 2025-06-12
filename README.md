@@ -1,4 +1,7 @@
 "# AccountViewer-API" 
+## Prerequisites
+
+.NET 9 SDK
 
 Run Project:
 
