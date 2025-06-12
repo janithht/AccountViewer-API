@@ -23,36 +23,41 @@ public class AuthService : IAuthService
 
     public async Task<LoginResponseDto?> AuthenticateAsync(string username, string password)
     {
-        var user = await _db.Users.SingleOrDefaultAsync(u => u.Username == username);
-        if (user == null) return null;
+        var strategy = _db.Database.CreateExecutionStrategy();
 
-        if (!BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
-            return null;
-
-        var claims = new[]
+        return await strategy.ExecuteAsync(async () =>
         {
+            var user = await _db.Users.SingleOrDefaultAsync(u => u.Username == username);
+            if (user == null) return null;
+
+            if (!BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+                return null;
+
+            var claims = new[]
+            {
             new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
             new Claim(ClaimTypes.Name, user.Username),
             new Claim(ClaimTypes.Role, user.Role)
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
-        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-        var duration = int.Parse(_config["Jwt:DurationInMinutes"]!);
-        var expires = DateTime.UtcNow.AddMinutes(duration);
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var duration = int.Parse(_config["Jwt:DurationInMinutes"]!);
+            var expires = DateTime.UtcNow.AddMinutes(duration);
 
-        var token = new JwtSecurityToken(
-            issuer: _config["Jwt:Issuer"],
-            audience: _config["Jwt:Audience"],
-            claims: claims,
-            expires: expires,
-            signingCredentials: creds
-        );
+            var token = new JwtSecurityToken(
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
+                claims: claims,
+                expires: expires,
+                signingCredentials: creds
+            );
 
-        return new LoginResponseDto
-        {
-            Token = new JwtSecurityTokenHandler().WriteToken(token),
-            Expires = expires
-        };
+            return new LoginResponseDto
+            {
+                Token = new JwtSecurityTokenHandler().WriteToken(token),
+                Expires = expires
+            };
+        });
     }
 }
